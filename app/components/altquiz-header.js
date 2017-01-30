@@ -20,12 +20,21 @@ export default Ember.Component.extend({
 
   */
 
-  title: ''
+  title: '',
 
   /*
 
   Actions:
 
+  - searchDecks: action passed to aq-input to handle
+  keyPress of text input, consumes keyPress event 
+
   */
+
+  actions: {
+    searchDecks: function(event) {
+      console.log(event);
+    }
+  }
 
 });
