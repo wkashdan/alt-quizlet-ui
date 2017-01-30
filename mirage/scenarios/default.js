@@ -1,5 +1,5 @@
 export default function(server) {
 
-  server.createList('set', 10);
-  
+  let sets = server.createList('set', 10);
+
 }

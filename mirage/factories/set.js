@@ -1,12 +1,17 @@
 import { Factory, faker } from 'ember-cli-mirage';
 
 export default Factory.extend({
-  title: faker.random.words(),
-  termCount: 10,
-  desciption: faker.random.words(),
+  title() {
+    return faker.random.words();
+  },
+  termCount() {
+    return 10
+  },
+  desciption() {
+    return faker.random.words();
+  },
 
   afterCreate(set, server) {
-    server.createList('term', 15, {set});
-
+    let terms = server.createList('term', 15, {set});
   }
 });

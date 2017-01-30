@@ -3,7 +3,7 @@ import RSVP from 'rsvp';
 
 export default Ember.Route.extend({
   model() {
-    RSVP.hash({
+    return RSVP.hash({
       sets: this.get('store').findAll('set', {include: 'terms'})
     })
   }

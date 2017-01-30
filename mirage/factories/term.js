@@ -1,6 +1,10 @@
 import { Factory, faker } from 'ember-cli-mirage';
 
 export default Factory.extend({
-  term: faker.random.word(),
-  definition: faker.random.words()
+  term() {
+    return faker.random.word();
+  },
+  definition() {
+    return faker.random.words();
+  }
 });
