@@ -1,7 +1,7 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('altquiz-deck-menu', 'Integration | Component | altquiz deck menu', {
+moduleForComponent('altquiz-set-menu', 'Integration | Component | altquiz set menu', {
   integration: true
 });
 
@@ -10,15 +10,15 @@ test('it renders', function(assert) {
   // Set any properties with this.set('myProperty', 'value');
   // Handle any actions with this.on('myAction', function(val) { ... });
 
-  this.render(hbs`{{altquiz-deck-menu}}`);
+  this.render(hbs`{{altquiz-set-menu}}`);
 
   assert.equal(this.$().text().trim(), '');
 
   // Template block usage:
   this.render(hbs`
-    {{#altquiz-deck-menu}}
+    {{#altquiz-set-menu}}
       template block text
-    {{/altquiz-deck-menu}}
+    {{/altquiz-set-menu}}
   `);
 
   assert.equal(this.$().text().trim(), 'template block text');
