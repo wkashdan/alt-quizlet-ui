@@ -11,3 +11,8 @@ body div {
 .ember-application {
   height: 100%;
 }
+
+.app-area {
+  display: flex;
+  flex-direction: row;
+}

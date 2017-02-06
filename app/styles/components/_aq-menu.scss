@@ -1,0 +1,20 @@
+.aq-menu {
+    max-width: 200px;
+    background-color: $indigo-light;
+    margin: 0px;
+    height: 100%;
+    padding: 0px;
+
+    li {
+      list-style: none;
+      color: $indigo-main;
+      margin: 0px;
+      padding: 10px;
+      transition: background-color 250ms;
+    }
+
+    li:hover {
+      background-color: darken($indigo-light, 5);
+      cursor: pointer;
+    }
+}
