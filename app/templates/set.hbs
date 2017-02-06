@@ -1,4 +1,4 @@
 <div class="app-area">
-  {{altquiz-set-menu sets=model.sets displayAttrName='title'}}
+  {{altquiz-set-menu sets=model.sets displayAttrName='title' onItemClick=(action "onItemClick")}}
   {{outlet}}
 </div>
