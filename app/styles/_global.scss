@@ -16,3 +16,11 @@ body div {
   display: flex;
   flex-direction: row;
 }
+
+.bg-indigo {
+    background-color: $indigo-light;
+}
+
+.bg-grey {
+  background-color: $grey-light;
+}
